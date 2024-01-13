@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Merriweather:wght@400;700;900&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
     font-family: 'Inter', sans-serif;
     font-family: 'Merriweather', serif;
     font-family: 'Work Sans', sans-serif;
@@ -93,6 +95,8 @@ main {
 
 }
 
+
+
 /* teams style */
 
 
@@ -107,12 +111,18 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2rem;
+    /* width: 50%; */
 
 }
+
+/* .teams-img-container img{
+    width: 100%;
+} */
 
 .teams-content {
     padding: 0 40px;
     border: 1px solid tomato;
+    /* width: 50%; */
 
 }
 
@@ -137,6 +147,7 @@ main {
     margin-top: 100px;
     display: flex;
     gap: 100px;
+    margin-bottom: 80px;
 }
 
 .feature .section-title {
@@ -152,18 +163,40 @@ main {
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
 }
 
+/* .feature-content{
+    width: 50%;
+}
+
+.feature-img{
+    width: 50%;
+} */
+
+
+.feature img {
+    width: 100%;
+    height: 90%;
+    margin-left: 40px;
+}
+
 .ten-years-badge {
     border-radius: 8px;
     background: #FF900E;
     color: #FFFFFF;
-    width: 300px;
+    width: 120px;
     padding: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 80px;
 }
 
-.ten-years-badge h2{
+.ten-years-badge h2 {
     font-size: 3rem;
+    margin: 0;
 }
 
+.ten-years-badge p {
+    font-size: 1.4rem;
+}
 
 
 
@@ -213,6 +246,26 @@ main {
 
 }
 
+/* footer style */
+
+footer {
+    /* depend on my design */
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.footer-section {
+    text-align: center;
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 40px 0;
+}
+
+.footer-section small {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 
 
 
@@ -227,8 +280,19 @@ main {
     nav,
     .teams-container,
     .facts-card-container,
-    .sponsors-img-container {
+    .sponsors-img-container,
+    .feature {
         flex-direction: column;
+    }
+
+    .feature-img img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ten-years-badge {
+        position: static;
+        max-width: 300px;
     }
 
     .teams-img-container {
@@ -261,7 +325,8 @@ main {
 
     nav,
     .teams-container,
-    .sponsors-img-container {
+    .sponsors-img-container,
+    .feature {
         flex-direction: column;
     }
 

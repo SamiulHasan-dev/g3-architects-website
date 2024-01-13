@@ -24,7 +24,7 @@
 
 header {
     background: rgba(255, 144, 14, 0.10);
-    padding: 50px 200px;
+    padding: 50px 180px;
 
 }
 
@@ -101,4 +101,44 @@ nav li a {
     nav{
         flex-direction: column;
     }
+}
+
+
+/* Main Section */
+
+main{
+    /* depend on my design */
+    max-width: 800px;  
+    margin: 0 auto;
+    
+}
+
+/* teams style */
+
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+}
+.teams-content{
+    padding: 0 40px;
+    border:  1px solid tomato;
+}
+
+.teams-title{
+    font-size: 1.8rem;
+}
+
+.teams-title .quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.teams-title .text-features{
+    color: #FF900E;
+    font-weight: 700;
 }
